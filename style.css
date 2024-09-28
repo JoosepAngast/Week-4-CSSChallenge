@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(22, 76, 100);
+}
+
+.main {
+    border: 1px solid white;
+    margin: 20px auto;
+    width: 600px;
+    height: 602px;
+}
+
+.main div {
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+    position: relative;
+    animation: punane;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+
+}
+
+@keyframes punane {
+     
+    0% {top: -250px;}
+    100% {top: 0;}
+
+
+}
+
+
+#yellow {
+    opacity: 0;
+    background-color: yellow;
+    position: relative;
+    animation: kollane;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+
+}
+@keyframes kollane {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+
+
+}
+
+
+#green {
+    background-color: green;
+    position: relative;
+    animation: roheline;
+    transform: rotateY(0deg);
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes roheline {
+    0% { transform: rotateY(0deg)}
+  100% { transform: rotateY(360deg)}
+
+    
+}
+
+/*HINT -   transform: rotateY(0deg);*/
