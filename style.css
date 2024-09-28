@@ -65,7 +65,6 @@ body {
     background-color: green;
     position: relative;
     animation: roheline;
-    transform: rotateY(0deg);
     animation-duration: 4s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
